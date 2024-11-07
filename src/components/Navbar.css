@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+.logo img {
+  width: 5vh;
+  height: 5vh;
+}
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  cursor: pointer;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+ a:hover{
+  color: blueviolet;
+}
+
+.btn {
+  border-color: blueviolet;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  background: none;
+}

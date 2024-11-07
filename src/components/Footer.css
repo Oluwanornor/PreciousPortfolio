@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h5 {
+  font-size: 15px;
+}
+a {
+  font-size: 12px;
+}
+
+.logo img {
+  width: 4vh;
+  height: 4vh;
+}
+
+.contact {
+  display: flex;
+  gap: 10px;
+}
+
+.contact img {
+  width: 2vh;
+  height: 2vh;
+
+}
+.contain{
+    background: #F5FCFF;
+
+}
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container2 img{
+    width: 1120px;
+}
+
+.credit{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    font-size: 12px;
+}
+
+.credit1 ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    
+}
