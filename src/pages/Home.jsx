@@ -6,9 +6,9 @@ import Tag from "../assets/image/tag 1.png";
 import Carbon from "../assets/image/carbon_ibm-engineering-test-mgmt.png";
 import Feather from "../assets/image/feather-pen 1.png";
 import About from "../assets/image/About Me.png";
-import image1 from "../assets/image/image 3.png";
+import image1 from "../assets/image/Image 3.png";
 import image2 from "../assets/image/image 2.png";
-import image3 from "../assets/image/image.png";
+import image3 from "../assets/image/Image.png";
 import Vector1 from "../assets/image/Vector (1).png";
 import Vector2 from "../assets/image/Vector (2).png";
 import Vector3 from "../assets/image/Vector (3).png";
@@ -40,8 +40,8 @@ const Home = () => {
       <section id="#" className="section2">
         <div className="seconddiv">
           <div className="second">
-          <p>My Skill</p>
-          <h1>My Expertise</h1>
+            <p>My Skill</p>
+            <h1>My Expertise</h1>
           </div>
 
           <div className="secondsubdiv">
@@ -252,44 +252,45 @@ const Home = () => {
       </section>
 
       <section id="#" className="section6">
-      <div class="contact-form-container">
-        <h2>Get In Touch</h2>
-        <h3>Contact me</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <form class="contact-form">
+        <div class="contact-form-container">
+          <h2>Get In Touch</h2>
+          <h3>Contact me</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <form class="contact-form">
             <div class="name-container">
               <div>
-            <label for="firstName">First name</label>
-                <input type="text" name="firstName" required>
-                </input>
-                </div>
-                <div>
+                <label for="firstName">First name</label>
+                <input type="text" name="firstName" required></input>
+              </div>
+              <div>
                 <label for="lastName">Last name</label>
-                <input type="text" name="lastName" required>
-                </input>
-                </div>
+                <input type="text" name="lastName" required></input>
+              </div>
             </div>
             <div class="name-container">
               <div>
-            <label for="email">Email</label>
-                <input type="email" name="email" required>
-                </input>
-                </div>
-                <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" required></input>
+              </div>
+              <div>
                 <label for="phone">Phone number</label>
 
-                <input type="tel" name="phone" required>
-                </input>
-                </div>
+                <input type="tel" name="phone" required></input>
+              </div>
             </div>
             <label for="message">Message</label>
-            <textarea name="message" placeholder="Type your message..." required></textarea>
+            <textarea
+              name="message"
+              placeholder="Type your message..."
+              required
+            ></textarea>
             <label className="checkbox-label1">
-          <input type="checkbox" className="form-checkbox" required /> I accept the terms
-        </label>
+              <input type="checkbox" className="form-checkbox" required /> I
+              accept the terms
+            </label>
             <button type="submit">Submit</button>
-        </form>
-    </div>
+          </form>
+        </div>
       </section>
     </div>
   );
