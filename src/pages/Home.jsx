@@ -19,7 +19,7 @@ import Avatar3 from "../assets/image/Avatar Image3.png";
 const Home = () => {
   return (
     <div>
-      <section id="#home" className="section1">
+      <section id="home" className="section1">
         <div className="maindiv">
           <div className="subdiv1">
             <p>Hey, I am Precious</p>
@@ -29,7 +29,9 @@ const Home = () => {
               enabling me to build comprehensive solutions that meet diverse
               clients needs.
             </h5>
-            <button>Get in Touch</button>
+            <a href="#contact">
+              <button>Get in Touch</button>
+            </a>
           </div>
           <div className="subdiv2">
             <img src={ME} alt="" />
@@ -92,7 +94,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="#aboutme" className="section3">
+      <section id="aboutme" className="section3">
         <div className="thirdsubdiv">
           <div className="thirdsubdiv1">
             <img src={About} alt="" />
@@ -101,15 +103,14 @@ const Home = () => {
             <p>About</p>
             <h1>About Me</h1>
             <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              varius faucibus massa sollicitudin amet augue. Nibh metus a semper
-              purus mauris duis. Lorem eu neque, tristique quis duis. Nibh
-              scelerisque ac adipiscing velit non nulla in amet pellentesque.
+              I am a dedicated full stack web developer, bringing dynamic and
+              user-focused solutions to life. With a solid foundation in
+              languages like HTML, CSS and back-end technologies like Node.js
+              and datatabase.
             </h5>
             <h5>
-              Sit turpis pretium eget maecenas. Vestibulum dolor mattis
-              consectetur eget commodo vitae. Amet pellentesque sit pulvinar
-              lorem mi a, euismod risus r.
+              I am passionate about creating web applications that not only meet
+              clients requirements but also provide seamless user experiences.
             </h5>
           </div>
         </div>
@@ -123,10 +124,12 @@ const Home = () => {
               <h1>My Portforlio</h1>
             </div>
             <div className="recent2">
-              <button>
-                <img src={Vector1} alt="" />
-                Visit My Github
-              </button>
+              <a href="https://github.com/Oluwanornor">
+                <button>
+                  <img src={Vector1} alt="" />
+                  Visit My Github
+                </button>
+              </a>
             </div>
           </div>
           <div className="fourthsubdiv">
@@ -138,7 +141,7 @@ const Home = () => {
                 Suspendisse varius enim in eros.
               </p>
               <div className="fourthsubdiv2">
-                <p>View Website</p>
+                <h5>View Website</h5>
                 <img src={Vector2} alt="" />
               </div>
             </div>
@@ -151,7 +154,7 @@ const Home = () => {
                 Suspendisse varius enim in eros.
               </p>
               <div className="fourthsubdiv2">
-                <p>View Website</p>
+                <h5>View Project</h5>
                 <img src={Vector2} alt="" />
               </div>
             </div>
@@ -163,7 +166,7 @@ const Home = () => {
                 Suspendisse varius enim in eros.
               </p>
               <div className="fourthsubdiv2">
-                <p>View Website</p>
+                <h5>View Website</h5>
                 <img src={Vector2} alt="" />
               </div>
             </div>
@@ -251,7 +254,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="#" className="section6">
+      <section id="contact" className="section6">
         <div class="contact-form-container">
           <h2>Get In Touch</h2>
           <h3>Contact me</h3>
@@ -284,9 +287,10 @@ const Home = () => {
               placeholder="Type your message..."
               required
             ></textarea>
-            <label className="checkbox-label1">
-              <input type="checkbox" className="form-checkbox" required /> I
-              accept the terms
+            <label className="checkbox-container">
+              <input type="checkbox" />
+              <span className="checkmark"></span>
+              <span className="label">I accept the terms.</span>
             </label>
             <button type="submit">Submit</button>
           </form>

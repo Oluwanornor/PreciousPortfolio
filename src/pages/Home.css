@@ -46,11 +46,11 @@
   width: 110vh;
 }
 /*******************Section 2********/
-.section2{
+.section2 {
   padding-top: 100px;
 }
 
-.second{
+.second {
   padding-bottom: 50px;
 }
 .seconddiv {
@@ -81,8 +81,14 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  cursor: pointer;
+  transition: border-bottom 0.3s ease;
+  border-radius: 12px;
 }
 
+.secondsubdiv1:hover {
+  border-bottom: #4b3cb3 2px solid;
+}
 .secondsubdiv1 h4 {
   font-size: 20px;
   font-weight: 700;
@@ -108,8 +114,8 @@
 }
 
 /*************************Section3*************************/
-.section3{
-  padding-top: 100px;
+.section3 {
+  padding-top: 70px;
   padding-bottom: 50px;
 }
 .thirdsubdiv {
@@ -117,9 +123,7 @@
   display: flex;
   flex-direction: row;
   padding-top: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  gap: 60px;
+  justify-content: space-between;
 }
 
 .thirdsubdiv1 img {
@@ -144,7 +148,7 @@
 }
 
 /*************** Section4***********************/
-.section4{
+.section4 {
   padding-bottom: 150px;
 }
 
@@ -166,11 +170,11 @@
   flex-direction: column;
 }
 
-.recent1 p{
+.recent1 p {
   font-weight: 700;
 }
 
-.recent1 h1{
+.recent1 h1 {
   font-weight: 700;
 }
 .recent2 img {
@@ -188,29 +192,38 @@
 .fourthsubdiv {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .fourthsubdiv1 {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   justify-content: center;
   text-align: start;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   padding-bottom: 2rem;
+  border-radius: 15px;
 }
 
 .fourthsubdiv1 p {
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  font-size: 14px;
 }
 
 .fourthsubdiv1 h4 {
   padding-right: 2rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
+  font-weight: 600;
 }
 
+.fourthsubdiv1 h5 {
+  padding-left: 1rem;
+  padding-right: 0rem;
+  font-weight: 600;
+}
 .fourthsubdiv1 img {
   width: 66vh;
 }
@@ -219,10 +232,15 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: border-bottom 0.3s ease;
 }
 
-.fourthsubdiv2 a img{
-  border-bottom:1px solid #4b3cb3;
+.fourthsubdiv2:hover {
+  border-bottom: #4b3cb3 2px solid;
+}
+
+.fourthsubdiv2 a img {
+  border-bottom: 1px solid #4b3cb3;
 }
 
 .fourthsubdiv2 img {
@@ -243,63 +261,62 @@
   background-color: #f5fcff;
   padding-right: 2rem;
   padding-left: 2rem;
-
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
-.fifth{
+.fifth {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
-.fifthsubdiv{
+.fifthsubdiv {
   display: flex;
   flex-direction: column;
-  border: 1px solid  #006B6A;
+  border: 1px solid #006b6a;
   border-radius: 10px;
   padding: 20px;
   gap: 20px;
 }
 
-.fifthsubdiv img{
+.fifthsubdiv img {
   width: 3vh;
 }
 
-.fifthsubdivimg{
+.fifthsubdivimg {
   display: flex;
   flex-direction: row;
 }
-.fifthsubdiv0{
+.fifthsubdiv0 {
   display: flex;
   gap: 10px;
 }
 
-.fifthsubdiv1 img{
+.fifthsubdiv1 img {
   width: 50px;
 }
 
 /******************** Form Section*********************/
-.section6{
+.section6 {
   background-color: white;
-  padding: 2rem;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: auto auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .name-container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .contact-form-container {
-  max-width: 500px;
-  width: 100%;
+  max-width: 650px;
+  width: 150%;
   padding: 20px;
   text-align: start;
-}
-
-.contact-form-container input[type="checkbox"]{
-  margin-left:5px;
 }
 
 .contact-form-container h2 {
@@ -332,27 +349,21 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 1rem; 
-}
-
-.fname-container label{
-  display: block;
-  margin-bottom: 5px;
-  justify-content: start;
+  gap: 1rem;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: px solid black;
   border-radius: 4px;
   font-size: 1em;
 }
 
 .contact-form textarea {
   resize: none;
-  height: 100px;
+  height: 150px;
 }
 
 .form-group label {
@@ -361,17 +372,42 @@
   margin-bottom: 5px;
 }
 
-.checkbox-label1{
+.checkbox-container {
   display: flex;
-  align-items: start;
-  justify-content: start;
-  gap: 10px;
-  font-family: "Karla", sans-serif;
-  border-radius: 4px;
-flex-direction: row;
-width: 100%;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox-container input[type="checkbox"] {
+  display: none;
 }
 
+/* Custom checkbox appearance */
+.checkbox-container .checkmark {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 4px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background-color: black; /* change to preferred color */
+}
+
+.checkbox-container input[type="checkbox"]:checked + .checkmark::before {
+  content: "✔";
+  color: white;
+  position: absolute;
+  left: 3px;
+  top: 0;
+  font-size: 18px;
+}
+
+.checkbox-container .label-text {
+  font-size: 16px;
+  color: #333;
+}
 
 button {
   background-color: #5c4ce8;
@@ -382,7 +418,7 @@ button {
   cursor: pointer;
   font-size: 1em;
   transition: background-color 0.3s ease;
-  width: 450px;
+  width: 615px;
 }
 
 button:hover {

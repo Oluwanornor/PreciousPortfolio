@@ -4,6 +4,7 @@ import "./Navbar.css";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar1 = () => {
+  
   return (
     <div className="container">
       <div className="logo">
@@ -19,7 +20,9 @@ const Navbar1 = () => {
         </ul>
       </nav>
       <div className="contact">
-        <button className="btn">Contact Me</button>
+        <a href="#contact">
+        <button className="btn" >Contact Me</button>
+        </a>
       </div>
     </div>
   );
