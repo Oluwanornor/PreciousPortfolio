@@ -37,9 +37,13 @@
   font-weight: 400;
 }
 
-.subdiv1 button {
+.subdiv1 .fbutton {
   background-color: #5e3bee;
   color: white;
+  width: 20vh;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
 }
 
 .subdiv2 img {
@@ -181,12 +185,14 @@
   width: 3vh;
 }
 
-.recent2 button {
+.recent2 .gbutton {
   background-color: #7e69d3;
   width: 150px;
   height: 40px;
   color: white;
   font-size: 12px;
+  border: none;
+  border-radius: 5px;
 }
 
 .fourthsubdiv {
@@ -409,7 +415,7 @@
   color: #333;
 }
 
-button {
+.formbutton {
   background-color: #5c4ce8;
   color: white;
   padding: 10px;
@@ -421,6 +427,113 @@ button {
   width: 615px;
 }
 
-button:hover {
+.formbutton:hover {
   background-color: #4b3cb3;
+}
+
+/* Mobile View Styling */
+@media (max-width: 768px) {
+  .maindiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+  }
+
+  .subdiv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subdiv1 h1 {
+    font-size: 35px;
+    text-align: justify;
+    line-height: 40px;
+  }
+
+  .subdiv1 h5 {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .subdiv1 .fbutton {
+    width: 20vh;
+    margin-left: 90px;
+  }
+
+  .subdiv2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 90px;
+  }
+  .subdiv2 img {
+    width: 140%;
+  }
+  /***********Section2***************/
+  .secondsubdiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secondsubdiv1 {
+    width: auto;
+  }
+
+  /************Section3*************/
+  .thirdsubdiv {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+  }
+  .thirdsubdiv1 img {
+    width: 100%;
+  }
+  .about {
+    padding-top: 10px;
+    text-align: justify;
+  }
+  .about p {
+    text-align: center;
+  }
+
+  .about h1 {
+    text-align: center;
+    font-weight: 600;
+  }
+  .about h5 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  /*****************Section4******************/
+  .recent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fourthsubdiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fourthsubdiv img {
+    width: auto;
+  }
+
+  /*****************Section5****************/
+  .fifth {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /********************Form**************/
+  .contact-form-container {
+    width: auto;
+  }
+  .formbutton {
+    width: auto;
+  }
 }

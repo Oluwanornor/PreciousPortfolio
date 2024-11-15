@@ -1,30 +1,37 @@
-import React from "react";
+import React, { useState } from 'react';
+import './Navbar.css';
 import logo from "../assets/image/image 1.png";
-import "./Navbar.css";
-import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar1 = () => {
-  
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <div className="container">
+    <nav className={`container ${isMobileMenuOpen ? 'expanded' : ''}`}>
       <div className="logo">
         <img src={logo} alt="" />
         <h5>Precious,</h5>
       </div>
-      <nav className="nav">
-        <ul>
-          <li><a href ="/#home">Home</a></li>
+      <div className="navbar-links">
+        <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+        <li><a href ="/#home">Home</a></li>
           <li><a href ="/#portforlio">Portfolio</a></li>
           <li><a href ="/#aboutme">About Me</a></li>
           <li><a href ="/#testimonials">Testimonials</a></li>
         </ul>
-      </nav>
+      </div>
       <div className="contact">
         <a href="#contact">
         <button className="btn" >Contact Me</button>
         </a>
       </div>
-    </div>
+      <button className="menus-toggle" onClick={toggleMobileMenu}>
+          ☰
+        </button>
+    </nav>
   );
 };
 

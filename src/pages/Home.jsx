@@ -30,7 +30,7 @@ const Home = () => {
               clients needs.
             </h5>
             <a href="#contact">
-              <button>Get in Touch</button>
+              <button className="fbutton">Get in Touch</button>
             </a>
           </div>
           <div className="subdiv2">
@@ -125,7 +125,7 @@ const Home = () => {
             </div>
             <div className="recent2">
               <a href="https://github.com/Oluwanornor">
-                <button>
+                <button className="gbutton">
                   <img src={Vector1} alt="" />
                   Visit My Github
                 </button>
@@ -292,7 +292,7 @@ const Home = () => {
               <span className="checkmark"></span>
               <span className="label">I accept the terms.</span>
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit" className="formbutton">Submit</button>
           </form>
         </div>
       </section>
