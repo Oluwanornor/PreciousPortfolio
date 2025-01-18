@@ -22,8 +22,11 @@ const Home = () => {
       <section id="home" className="section1">
         <div className="maindiv">
           <div className="subdiv1">
-            <p>Hey, I am Precious</p>
-            <h1>I develop dynamic and User-Centered Web Applications</h1>
+            <p>Hey, I am Precious Edechukwu</p>
+            <h1>
+              I develop dynamic and User-Centered Web Applications and soft ware
+              developer
+            </h1>
             <h5>
               My expertise spans both front-end and back-end development,
               enabling me to build comprehensive solutions that meet diverse
@@ -292,7 +295,9 @@ const Home = () => {
               <span className="checkmark"></span>
               <span className="label">I accept the terms.</span>
             </label>
-            <button type="submit" className="formbutton">Submit</button>
+            <button type="submit" className="formbutton">
+              Submit
+            </button>
           </form>
         </div>
       </section>
